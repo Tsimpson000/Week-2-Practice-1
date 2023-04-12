@@ -10,6 +10,19 @@
             Console.WriteLine(car1.ToString());
             Console.WriteLine(car2.ToString());
             Console.WriteLine(car3.ToString());
+
+            BankAccount bankAccount = new BankAccount("123456789", "Wayne Campbell", 20);
+            Console.WriteLine(bankAccount.ToString());
+            bankAccount.Deposit(500);
+            Console.WriteLine(bankAccount.ToString());
+            bankAccount.Deposit(-15000);
+            Console.WriteLine(bankAccount.ToString());
+            bankAccount.Withdraw(300);
+            Console.WriteLine(bankAccount.ToString());
+            bankAccount.Withdraw(-500);
+            Console.WriteLine(bankAccount.ToString());
+
+
         }
     }
 }
