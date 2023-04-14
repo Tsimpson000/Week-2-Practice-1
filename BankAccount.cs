@@ -40,7 +40,7 @@ namespace Week_2_Practice_1
         }
         public void Withdraw(double amount)
         {
-            if (amount > 0)
+            if (amount > 0 && amount < _balance)
             {
                 _balance -= amount;
             }
